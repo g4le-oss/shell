@@ -226,6 +226,7 @@ WaylandCompositor {
             shortcutComponent.incubateObject(keyBindings, { shortcut: shortcut });
         }
         onReady: {
+            console.log("ready",output);
             output.ready = true;
             shellHelper.showPanel(output);
         }
